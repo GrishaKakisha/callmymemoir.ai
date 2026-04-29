@@ -13,13 +13,12 @@
     font-family: 'Inter', sans-serif;
     color: #2c2c2c;
     background: #faf9f7;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    line-height: 1.7;
+  }
+
+  .hero {
     text-align: center;
-    padding: 40px 20px;
+    padding: 80px 20px 60px;
   }
 
   .logo {
@@ -36,34 +35,128 @@
     font-weight: 400;
     font-style: italic;
     color: #6b7c6b;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
 
-  .coming-soon {
-    font-size: 15px;
-    color: #888;
+  .hero-description {
+    font-size: 16px;
     font-weight: 300;
-    margin-bottom: 8px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
-  .contact {
+  section {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 20px 48px;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a3a4a;
+    margin-bottom: 16px;
+  }
+
+  p {
     font-size: 15px;
-    color: #666;
     font-weight: 300;
+    margin-bottom: 14px;
+    color: #444;
   }
 
-  .contact a {
+  .steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .steps li {
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    font-weight: 300;
+    color: #444;
+  }
+
+  .steps li:last-child {
+    border-bottom: none;
+  }
+
+  .step-number {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #1a3a4a;
+    font-size: 17px;
+    margin-right: 8px;
+  }
+
+  .step-title {
+    font-weight: 500;
+    color: #2c2c2c;
+  }
+
+  .highlight-box {
+    background: #f3f1ed;
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-top: 8px;
+  }
+
+  .highlight-box p {
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  .highlight-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  .divider {
+    max-width: 680px;
+    margin: 0 auto 48px;
+    padding: 0 20px;
+  }
+
+  .divider hr {
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+
+  .about {
+    padding-bottom: 24px;
+  }
+
+  .about p.entity {
+    font-size: 13px;
+    color: #999;
+    font-weight: 300;
+    margin-top: 8px;
+  }
+
+  .contact-line {
+    font-size: 15px;
+    font-weight: 300;
+    color: #555;
+  }
+
+  .contact-line a {
     color: #2a5a6a;
     text-decoration: none;
   }
 
-  .contact a:hover {
+  .contact-line a:hover {
     text-decoration: underline;
   }
 
   footer {
-    position: fixed;
-    bottom: 24px;
+    text-align: center;
+    padding: 32px 20px 40px;
+    border-top: 1px solid #ddd;
+    max-width: 680px;
+    margin: 0 auto;
     font-size: 13px;
     color: #aaa;
     font-weight: 300;
@@ -82,14 +175,54 @@
 </style>
 </head>
 <body>
+
+<div class="hero">
   <div class="logo">MemoirAI</div>
   <div class="tagline">Preserve your life stories with a phone call.</div>
-  <p class="coming-soon">Coming soon.</p>
-  <p class="contact"><a href="mailto:magpie.ai.llc@gmail.com">magpie.ai.llc@gmail.com</a></p>
+  <p class="hero-description">MemoirAI helps older adults preserve their life stories as a written memoir their family can read and share for generations. No apps, no screens, no typing — just a phone call.</p>
+</div>
 
-  <footer>
-    <a href="/privacy">Privacy Policy</a>
-    <a href="/terms">Terms of Service</a>
-  </footer>
+<section>
+  <h2>For organizations</h2>
+  <p>MemoirAI is available as a group program for senior living communities, insurance wellness programs, and other organizations that want to offer meaningful, low-friction legacy work to the people they serve.</p>
+  <p>Participants call a dedicated phone number provided by their community or organization, tell their stories at their own pace, and receive a completed memoir they can share with their family.</p>
+  <p>Organizations receive only anonymized participation metrics — no story content, transcripts, or personal information. We believe the people we serve should always own their stories.</p>
+  <p class="contact-line">To discuss bringing MemoirAI to your community, contact <a href="mailto:magpie.ai.llc@gmail.com">magpie.ai.llc@gmail.com</a>.</p>
+</section>
+
+
+<div class="divider"><hr></div>
+
+<section>
+  <h2>Privacy is the product</h2>
+  <p>The stories people share with MemoirAI belong to them — not to us, and not to any organization that provides the service. We never sell personal data. We never use stories for advertising or marketing.</p>
+  <p>Organizations that offer MemoirAI to their members receive only anonymized, aggregate usage statistics — never the content of any call, transcript, or memoir.</p>
+  <p>For the legal specifics, see our <a href="/privacy" style="color: #2a5a6a; text-decoration: none;">Privacy Policy</a> and <a href="/terms" style="color: #2a5a6a; text-decoration: none;">Terms of Service</a>.</p>
+</section>
+
+<div class="divider"><hr></div>
+
+<section>
+  <h2>How calls and messaging work</h2>
+  <div class="highlight-box">
+    <p>At the start of each call, participants are informed that they are speaking with an AI assistant, that the call is recorded to create their memoir, and that a text message will be sent to their phone number when the memoir is ready. Message and data rates may apply. Participants may reply STOP to any message to unsubscribe, or HELP for assistance. By continuing the call after this disclosure, the caller consents to the recording and to receiving the memoir delivery message.</p>
+    <p>All calls are recorded and retained as evidence of verbal consent. Full terms are in our <a href="/privacy" style="color: #2a5a6a; text-decoration: none;">Privacy Policy</a> and <a href="/terms" style="color: #2a5a6a; text-decoration: none;">Terms of Service</a>.</p>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<section class="about">
+  <h2>About</h2>
+  <p>We are a small team building tools that help families preserve the stories of the people they love. MemoirAI started with a simple belief: everyone has a life worth remembering, and it should be as easy as picking up the phone.</p>
+  <p class="contact-line">For partnership inquiries, contact <a href="mailto:magpie.ai.llc@gmail.com">magpie.ai.llc@gmail.com</a>.</p>
+  <p class="entity">MemoirAI is operated by Magpie AI LLC, an Illinois limited liability company.</p>
+</section>
+
+<footer>
+  <a href="/privacy">Privacy Policy</a>
+  <a href="/terms">Terms of Service</a>
+</footer>
+
 </body>
 </html>
